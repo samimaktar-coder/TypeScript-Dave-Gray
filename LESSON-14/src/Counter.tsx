@@ -32,6 +32,8 @@ const reducer = (
 type CounterType = {
   children: (num: number) => ReactNode;
 };
+
+
 const Counter = ({ children }: CounterType) => {
   const [state, dispatch] = useReducer(reducer, initState);
   const increment = () => dispatch({ type: REDUCER_ACTION_TYPE.INCREMENT });
